@@ -2,7 +2,7 @@ const {UserModel} = require('../models/User');
 const bcrypt = require('bcrypt');
 const dotenv = require('dotenv');
 const jwt = require('jsonwebtoken');
-const {client} = require('../Redis');
+//const {client} = require('../Redis');
 //const redis = require('redis');
 
 dotenv.config();

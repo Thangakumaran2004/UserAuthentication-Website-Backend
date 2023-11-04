@@ -1,5 +1,5 @@
-const redis = require( 'redis');
-const dotenv = require('dotenv');
+//const redis = require( 'redis');
+/*const dotenv = require('dotenv');
 
 dotenv.config();
 
@@ -33,4 +33,4 @@ client.on("SIGQUIT", ()=>{
     });
    
 });*/
-module.exports = {client};
+//module.exports = {client};*/
