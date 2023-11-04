@@ -3,7 +3,9 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-const client = redis.createClient().on('error',err=>console.log('Redis client Error',err)).on('connect',()=>console.log('Connected to redis server')).connect();
+const client = redis.createClient({
+    url: process.env.redis_URL
+}).on('error',err=>console.log('Redis client Error',err)).on('connect',()=>console.log('Connected to redis server')).connect();
 
 //const client = redisClient();
 
